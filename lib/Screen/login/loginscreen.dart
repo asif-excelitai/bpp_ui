@@ -1,5 +1,6 @@
 import 'package:ecshop/Screen/signup/registration.dart';
 import 'package:ecshop/common/login_signup/customeClippper.dart';
+import 'package:ecshop/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import '../homepage.dart';
 
@@ -90,8 +91,6 @@ class _MyloginState extends State<Mylogin> {
   }
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
-    final _width = MediaQuery.of(context).size.width;
     return GestureDetector(
        onTap: (){
          FocusScopeNode currentFocus=FocusScope.of(context);
@@ -105,8 +104,8 @@ class _MyloginState extends State<Mylogin> {
           backgroundColor: Color(0xffF3F3F3),
           body: SingleChildScrollView(
             child: Container(
-              height: _height,
-              width: _width,
+              height: SDeviceUtlis.getScreenHeight(context) ,
+              width: SDeviceUtlis.getScreenWidth(context) ,
               child: Center(
                 child: Stack(
                   children: [
@@ -125,8 +124,8 @@ class _MyloginState extends State<Mylogin> {
                         Container(
                           padding: EdgeInsets.symmetric(horizontal: 5),
                           margin: EdgeInsets.symmetric(horizontal: 10),
-                          width: _width,
-                          height: _height * .4,
+                          width: SDeviceUtlis.getScreenWidth(context),
+                          height: SDeviceUtlis.getScreenHeight(context) * .5,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color:Color(0xFFFFFFFF)
@@ -182,8 +181,8 @@ class _MyloginState extends State<Mylogin> {
                                         ),
                                       ),
                                       Container(
-                                        height: _height *.06,
-                                        width: _width * .6,
+                                        height: SDeviceUtlis.getScreenHeight(context) *.06,
+                                        width: SDeviceUtlis.getScreenWidth(context) * .6,
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: isMobileNoError?Colors.red:Colors.blue,
@@ -220,8 +219,8 @@ class _MyloginState extends State<Mylogin> {
                                         ),
                                       ),
                                       Container(
-                                        height: _height * .06,
-                                        width: _width * .6,
+                                        height: SDeviceUtlis.getScreenHeight(context) * .06,
+                                        width: SDeviceUtlis.getScreenWidth(context) * .6,
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: isPasswordError?Colors.red : Colors.blue,
@@ -305,7 +304,7 @@ class _MyloginState extends State<Mylogin> {
                               ),
                               SizedBox(
                                 height: 45,
-                                width: _width,
+                                width: SDeviceUtlis.getScreenWidth(context),
                                 child: ElevatedButton(
                                     onPressed: (){
                                       if(_phoneNumberController.text.isNotEmpty && _passWordController.text.isNotEmpty ){
@@ -346,7 +345,7 @@ class _MyloginState extends State<Mylogin> {
                                                   Registration()),
                                         );
                                       },
-                                      child: Text(
+                                      child:const Text(
                                         "Signup",
                                         style: TextStyle(
                                             color: Colors.blueAccent,
@@ -370,22 +369,3 @@ class _MyloginState extends State<Mylogin> {
     );
   }
 }
-// Future openDialog() => showDialog(
-//     context: context,
-//     builder: (context) => AlertDialog(
-//     title: Text("Enter phone number"),
-// ));
-// class _Traingle extends CustomClipper<Path> {
-//   @override
-//   Path getClip(Size size) {
-//     final path = Path();
-//     path.moveTo(size.width * 0.4, -size.height * 0.2);
-//     path.lineTo(0, size.height);
-//     path.lineTo(size.width + 40, size.height * 0.3);
-//     path.close();
-//     return path;
-//   }
-//
-//   @override
-//   bool shouldReclip(covariant CustomClipper<dynamic> oldClipper) => true;
-// }

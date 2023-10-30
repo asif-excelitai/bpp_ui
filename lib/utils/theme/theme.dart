@@ -37,7 +37,7 @@ static ThemeData darkttheme=ThemeData(
   appBarTheme: SAppbarTheme.DarkAppbarTheme,
   checkboxTheme: SCheckboxTheme.darkCheckboxTheme,
   bottomSheetTheme: SBottomSheetTheme.darktBottomSheetTheme,
-  // inputDecorationTheme: STextFormFieldTheme.darkInputDecorationTheme,
+  inputDecorationTheme: STextFormFieldTheme.darkInputDecorationTheme,
   outlinedButtonTheme: SOutlineButtonTheme.DarkOutlineButtonTheme,
   elevatedButtonTheme: SElevatedButtonTheme.darkElevatedButtonTheme,
 

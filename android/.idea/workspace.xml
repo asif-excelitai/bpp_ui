@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3905d711-7695-4acd-b3e5-a8d585b82179" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../assets/logo/gall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/demo/another.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/demo/example.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/demo/image_reg.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/demo/newonepage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/demo/photo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/programming/imagepicker.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/testingdemo/imagepickert.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/Screen/loginscreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/Screen/loginscreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/Screen/moreregistration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/Screen/moreregistration.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/Screen/registration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/Screen/registration.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/programming/user_registration.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../test/widget_test.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4199fe11-dafd-4cee-bd48-2b709f8d70e6" />
+        <option name="url" value="https://github.com/AAShayon01/flutter_ui_practice.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectId" id="2WYVpbydNOPRBSre9iywgY8ez1Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3905d711-7695-4acd-b3e5-a8d585b82179" name="Changes" comment="" />
+      <created>1696909684214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696909684214</updated>
+    </task>
+    <servers />
+  </component>
+</project>

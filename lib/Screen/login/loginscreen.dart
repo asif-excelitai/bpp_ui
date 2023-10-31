@@ -187,7 +187,7 @@ class _MyloginState extends State<Mylogin> {
                                           border: Border.all(
                                             color: isMobileNoError?Colors.red:Colors.blue,
                                           ),
-                                          borderRadius: BorderRadius.circular(10),
+                                          // borderRadius: BorderRadius.circular(15),
                                         ),
                                         child: TextFormField(
                                           keyboardType: TextInputType.number,
@@ -197,7 +197,7 @@ class _MyloginState extends State<Mylogin> {
                                             filled: true,
                                             border: OutlineInputBorder(
                                               borderSide: BorderSide.none,
-                                              borderRadius: BorderRadius.circular(10),
+                                            borderRadius: BorderRadius.circular(10),
                                             ),
                                             hintText: "Enter mobile Number",
                                           ),

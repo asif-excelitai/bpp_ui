@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="theme_mode_handler.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+    <option name="filePath" value="$PROJECT_DIR$/lib/utils/theme/custom_themes/theme_mode_handler.dart" />
+    <method v="2" />
+  </configuration>
+</component>

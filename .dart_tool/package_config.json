@@ -176,6 +176,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "get_it",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/get_it-7.6.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "html",
       "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/html-0.15.4",
       "packageUri": "lib/",
@@ -320,6 +326,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
@@ -384,6 +396,12 @@
       "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/pointycastle-3.7.3",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/provider-6.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -488,7 +506,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-10-30T09:59:47.151099Z",
+  "generated": "2023-10-31T09:49:10.424508Z",
   "generator": "pub",
   "generatorVersion": "3.1.2"
 }

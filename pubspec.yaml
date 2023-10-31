@@ -31,6 +31,8 @@ dependencies:
   auto_route: ^7.8.4
 #----State management-----#
   iconsax: ^0.0.8
+  provider: ^6.0.5
+  get_it: ^7.6.4
 
 dev_dependencies:
   flutter_test:

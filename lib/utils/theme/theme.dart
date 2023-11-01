@@ -24,9 +24,10 @@ static ThemeData lighttheme=ThemeData(
   elevatedButtonTheme: SElevatedButtonTheme.lightElevatedButtonTheme,
   outlinedButtonTheme: SOutlineButtonTheme.lightOutlinedButtonTheme,
   // inputDecorationTheme: STextFormFieldTheme.lightInputDecorationTheme,
+  colorScheme: ColorScheme.light(),
 
 );
-static ThemeData darkttheme=ThemeData(
+static ThemeData darktheme=ThemeData(
   useMaterial3: true,
   fontFamily:'Poppins',
   brightness: Brightness.dark,
@@ -40,6 +41,7 @@ static ThemeData darkttheme=ThemeData(
   inputDecorationTheme: STextFormFieldTheme.darkInputDecorationTheme,
   outlinedButtonTheme: SOutlineButtonTheme.DarkOutlineButtonTheme,
   elevatedButtonTheme: SElevatedButtonTheme.darkElevatedButtonTheme,
+  colorScheme: ColorScheme.dark(),
 
 );
 }

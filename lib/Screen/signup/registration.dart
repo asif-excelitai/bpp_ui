@@ -1,4 +1,5 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecshop/Screen/signup/regestration_image.dart';
 import 'package:ecshop/common/login_signup/customeClippper.dart';
 import 'package:flutter/material.dart';
@@ -361,7 +362,7 @@ class _RegistrationState extends State<Registration> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 5,),
                                 child: Text(
-                                  "Become A Seller",
+                                  "Become a seller".tr().toString(),
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
@@ -372,7 +373,7 @@ class _RegistrationState extends State<Registration> {
                                 height: 5,
                               ),
                               Text(
-                                "Wellcome to Seller Registration",
+                                "Wellcome to seller Registration".tr().toString(),
                                 style: TextStyle(fontSize: 15.0),
                               ),
                               SizedBox(
@@ -397,7 +398,7 @@ class _RegistrationState extends State<Registration> {
                                     Padding(
                                       padding: EdgeInsets.only(left: 8.0),
                                       child: Text(
-                                        "Seller info",
+                                        "Seller info".tr().toString(),
                                         style: TextStyle(
                                           fontSize: 15.0,
                                           color: Colors.black54,
@@ -443,7 +444,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "First Name",
+                                                      "First Name".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -541,7 +542,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "Last name",
+                                                      "last Name".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -627,7 +628,7 @@ class _RegistrationState extends State<Registration> {
                                               child: Padding(
                                                 padding: const EdgeInsets.all(8),
                                                 child: Text(
-                                                  "Email address",
+                                                  "Email address".tr().toString(),
                                                   style: TextStyle(
                                                     color: Colors.brown,
                                                     fontSize: 15.0,
@@ -719,7 +720,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "Phone Number",
+                                                      "Phone Number".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -821,7 +822,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "Shop name",
+                                                      "Shop name".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -900,7 +901,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "District/City",
+                                                      "District/City".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -1006,7 +1007,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "Upozilla/Thana",
+                                                      "Upozilla/Thana".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -1103,7 +1104,7 @@ class _RegistrationState extends State<Registration> {
                                                     padding:
                                                         const EdgeInsets.all(8),
                                                     child: Text(
-                                                      "Area/Ward/Union",
+                                                      "Area/Word/Union".tr().toString(),
                                                       style: TextStyle(
                                                         color: Colors.brown,
                                                         fontSize: 15.0,
@@ -1203,7 +1204,7 @@ class _RegistrationState extends State<Registration> {
                                               AutovalidateMode.onUserInteraction,
                                           controller: _ShopAddressController,
                                           decoration: InputDecoration(
-                                            hintText: "Add shop Address",
+                                            hintText: "Add shop Address".tr().toString(),
                                             border:OutlineInputBorder(
                                               borderSide: BorderSide.none,
                                             )
@@ -1366,11 +1367,11 @@ class _RegistrationState extends State<Registration> {
                                             // }
                                           }
                                         },
-                                        child: Text("Next")),
+                                        child: Text("Next".tr().toString())),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
-                                        Text("Already have a Account"),
+                                        Text("Already Have a Account".tr().toString()),
                                         TextButton(
                                             onPressed: () {
                                               Navigator.push(
@@ -1381,7 +1382,7 @@ class _RegistrationState extends State<Registration> {
                                               );
                                             },
                                             child: Text(
-                                              "Login",
+                                              "Login".tr().toString(),
                                               style: TextStyle(
                                                   color: Colors.blueAccent,
                                                   decoration:

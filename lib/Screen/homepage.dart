@@ -1,6 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecshop/features/authentication/theme.controller/theme_provider.dart';
 import 'package:ecshop/utils/constant/sizes.dart';
-import 'package:ecshop/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 class Newone extends StatefulWidget {
@@ -17,7 +17,7 @@ class _NewoneState extends State<Newone> {
     return Scaffold(
       // backgroundColor: Colors.redAccent,
       body: Container(
-        child: Center(child: Text('Welcome to the Homepage ')),
+        child: Center(child: Text('Welcome to the Homepage '.tr().toString())),
       ),
       appBar: AppBar(
         // automaticallyImplyLeading: false,
@@ -37,7 +37,31 @@ class _NewoneState extends State<Newone> {
                 onChanged:(value){
                final provider=Provider.of<ThemeProvider>(context ,listen:false );
                provider.toggleTheme(value);
-            } )
+            } ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Language"),
+                Spacer(flex: 2,),
+                Column(
+                  children: [
+                    ElevatedButton(
+                        onPressed: () {
+                          context.locale = new Locale("bn");
+                        },
+                        child: Text(" Bangla")),
+                    SizedBox(
+                      height: 100,
+                    ),
+                    ElevatedButton(
+                        onPressed: () {
+                          context.locale = new Locale("en");
+                        }, child: Text("English")),
+                  ],
+                )
+              ],
+            )
           ],
         ),
       )

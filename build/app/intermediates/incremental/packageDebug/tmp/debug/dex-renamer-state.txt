@@ -1,4 +1,4 @@
-#Wed Nov 01 10:07:22 BDT 2023
-base.0=/Users/mac/Ans/ecshop/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sun Nov 05 15:55:40 BDT 2023
+base.0=/Users/mac/Ans/bpp/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

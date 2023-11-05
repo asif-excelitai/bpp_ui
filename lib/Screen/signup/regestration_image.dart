@@ -1,6 +1,4 @@
-import 'dart:developer';
-import 'dart:math';
-
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecshop/Screen/signup/registration.dart';
 import 'package:ecshop/common/login_signup/customeClippper.dart';
 import 'package:flutter/material.dart';
@@ -535,7 +533,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                 children: [
                                                   Icon(Icons.file_copy_rounded),
                                                   Text(
-                                                    "Browse",
+                                                    "Browse".tr().toString(),
                                                     style: TextStyle(
                                                         color: Colors
                                                             .lightBlueAccent,
@@ -714,7 +712,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       children: [
                                         Icon(Icons.file_copy_sharp),
                                         Text(
-                                          "Browse",
+                                          "Browse".tr().toString(),
                                           style: TextStyle(
                                               color: Colors.lightBlueAccent,
                                               fontSize: 20,
@@ -759,7 +757,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                           child: Padding(
                                             padding: const EdgeInsets.all(8),
                                             child: Text(
-                                              "Password",
+                                              "Password".tr().toString(),
                                               style: TextStyle(
                                                 color: Colors.blueAccent,
                                                 fontSize: 15.0,
@@ -838,7 +836,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                             child: Padding(
                                               padding: const EdgeInsets.all(8),
                                               child: Text(
-                                                "Retype Password",
+                                                "Retype Password".tr().toString(),
                                                 style: TextStyle(
                                                   color: Colors.blueAccent,
                                                   fontSize: 15.0,
@@ -900,7 +898,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                     },
                                   ),
                                   Text(
-                                    "I agree to Your terms",
+                                    "I agree to your".tr().toString(),
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -908,7 +906,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                   TextButton(
                                       onPressed: () {},
                                       child: Text(
-                                        "Terms and Condition",
+                                        "Terms and Condition".tr().toString(),
                                         style: TextStyle(
                                           decoration: TextDecoration.underline,
                                           fontWeight: FontWeight.bold,
@@ -938,7 +936,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                 BorderRadius.circular(10.0),
                                           ),
                                           primary: Colors.white12),
-                                      child: Text("Back")),
+                                      child: Text("Back".tr().toString())),
                                   ElevatedButton(
                                       onPressed: () {
                                         if (_passwordController.text.isNotEmpty &&
@@ -979,7 +977,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                 BorderRadius.circular(10.0),
                                           ),
                                           primary: Colors.white12),
-                                      child: Text("Submit")),
+                                      child: Text("Submit".tr().toString())),
                                 ],
                               ),
                               Row(

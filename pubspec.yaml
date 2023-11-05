@@ -11,6 +11,7 @@ dependencies:
 
 #-----icons-----#
   cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
 #----design clipper----#
   flutter_custom_clippers: ^2.1.0
 #------dropdown option------#
@@ -55,6 +56,7 @@ flutter:
   assets:
     - assets/logo/
     - assets/images/on_boarding_images/
+    - lib/features/language/
 
   #-----local fonts -----#
   fonts:

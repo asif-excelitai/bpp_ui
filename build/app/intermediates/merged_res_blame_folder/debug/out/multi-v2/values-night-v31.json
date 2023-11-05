@@ -4,7 +4,7 @@
             "outputFile": "com.example.ecshop.app-mergeDebugResources-25:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "/Users/mac/Ans/ecshop/android/app/src/main/res/values-night-v31/styles.xml",
+                    "source": "/Users/mac/Ans/bpp/android/app/src/main/res/values-night-v31/styles.xml",
                     "from": {
                         "startLines": "3,18",
                         "startColumns": "4,4",

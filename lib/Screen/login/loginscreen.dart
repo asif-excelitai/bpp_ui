@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecshop/Screen/signup/registration.dart';
 import 'package:ecshop/common/login_signup/customeClippper.dart';
 import 'package:ecshop/utils/device/device_utility.dart';
@@ -135,7 +136,7 @@ class _MyloginState extends State<Mylogin> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Text(
-                                "Sign in",
+                                "Sign in".tr().toString(),
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -145,7 +146,7 @@ class _MyloginState extends State<Mylogin> {
                                 height: 5,
                               ),
                               Text(
-                                "Wellcome to Seller login",
+                                "Wellcome to seller Sign in".tr().toString(),
                                 style: TextStyle(fontSize: 15.0),
                               ),
                               SizedBox(
@@ -173,7 +174,7 @@ class _MyloginState extends State<Mylogin> {
                                       Padding(
                                         padding: EdgeInsets.only(left: 8.0),
                                         child: Text(
-                                          "Mobile",
+                                          "Mobile".tr().toString(),
                                           style: TextStyle(
                                             fontSize: 15.0,
                                             color: Colors.black38,
@@ -199,7 +200,7 @@ class _MyloginState extends State<Mylogin> {
                                               borderSide: BorderSide.none,
                                               borderRadius: BorderRadius.circular(10),
                                             ),
-                                            hintText: "Enter mobile Number",
+                                            hintText: "Enter mobile Number".tr().toString(),
                                           ),
                                           onChanged: (value){
                                            _validatePhoneNumber(value);
@@ -211,7 +212,7 @@ class _MyloginState extends State<Mylogin> {
                                       Padding(
                                         padding: EdgeInsets.only(left: 8.0),
                                         child: Text(
-                                          "Password",
+                                          "Password".tr().toString(),
                                           style: TextStyle(
                                             fontSize: 15.0,
                                             color: Colors.black38,
@@ -236,7 +237,7 @@ class _MyloginState extends State<Mylogin> {
                                               borderSide: BorderSide.none,
                                               borderRadius: BorderRadius.circular(10),
                                             ),
-                                            hintText: "Enter Password",
+                                            hintText: "Enter Password".tr().toString(),
                                           ),
                                           // validator: _validatePassword,
                                           onChanged: (value){
@@ -265,7 +266,7 @@ class _MyloginState extends State<Mylogin> {
                                             },
                                           ),
                                           Text(
-                                            "Remember me ",
+                                            "Remember me".tr().toString(),
                                             style: TextStyle(fontSize: 15),
                                           ),
                                           TextButton(
@@ -291,7 +292,7 @@ class _MyloginState extends State<Mylogin> {
                                                     });
                                               },
                                               child: Text(
-                                                "Forgot password ?",
+                                                "Forget Password ?".tr().toString(),
                                                 style: TextStyle(
                                                   color: Colors.blueAccent,
                                                 ),
@@ -330,12 +331,12 @@ class _MyloginState extends State<Mylogin> {
                                         }
                                       }
                                     },
-                                  child: Text("Sign in")),
+                                  child: Text("Sign in".tr().toString())),
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text("Become a seller"),
+                                  Text("Become a seller".tr().toString()),
                                   TextButton(
                                       onPressed: () {
                                         Navigator.push(

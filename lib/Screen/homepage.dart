@@ -16,16 +16,15 @@ class _NewoneState extends State<Newone> {
     final themeProvider=Provider.of<ThemeProvider>(context);
     return Scaffold(
       // backgroundColor: Colors.redAccent,
-      body: Container(
-        child: Center(child: Text('Welcome to the Homepage '.tr().toString())),
-      ),
+      body: Center(child: Text('Welcome to the Homepage '.tr().toString())),
       appBar: AppBar(
         // automaticallyImplyLeading: false,
-        title:const Text('This is home page'),
+        // title:const Text('This is home page'),
       ),
       drawer: Drawer(
+        // backgroundColor: Theme.of(context).colorScheme.surface,
         child: ListView(
-          padding: EdgeInsets.only(top: SSizes.defaultSpace),
+          padding: const EdgeInsets.only(top: SSizes.defaultSpace),
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
@@ -48,7 +47,7 @@ class _NewoneState extends State<Newone> {
                   children: [
                     ElevatedButton(
                         onPressed: () {
-                          context.locale = new Locale("bn");
+                          context.locale = Locale("bn");
                         },
                         child: Text(" Bangla")),
                     SizedBox(
@@ -56,7 +55,7 @@ class _NewoneState extends State<Newone> {
                     ),
                     ElevatedButton(
                         onPressed: () {
-                          context.locale = new Locale("en");
+                          context.locale = Locale("en");
                         }, child: Text("English")),
                   ],
                 )

@@ -33,6 +33,7 @@ dependencies:
 #----State management-----#
   iconsax: ^0.0.8
   provider:
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:

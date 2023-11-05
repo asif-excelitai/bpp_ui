@@ -4,6 +4,7 @@ import 'package:ecshop/utils/constant/image_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../utils/constant/colors.dart';
 import '../../utils/constant/sizes.dart';
@@ -57,7 +58,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             top: SDeviceUtlis.getAppBarHeight(),
             right: SSizes.defaultSpace,
             child: TextButton(onPressed: (){
-              Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Mylogin()), (Route<dynamic>route) => false);
+            //  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Mylogin()), (Route<dynamic>route) => false);
+              Done(context);
             },
                 child: const Text("skip")),),
           ///Dot Nav.. SmoothPageIndicator
@@ -72,16 +74,19 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
           ),
           ///Circular button next
-          onLastpage
-       ? Positioned(
+          onLastpage ? Positioned(
         right: SSizes.defaultSpace,
         bottom: SDeviceUtlis.getBottomNavigationBarHeight(),
-        child: ElevatedButton(
+        child:
+        ElevatedButton(
             onPressed: (){
-              Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Mylogin()), (Route<dynamic>route) => false);
+              Done(context);
+             // Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>Mylogin()), (Route<dynamic>route) => false);
             },
             style: ElevatedButton.styleFrom(shape: CircleBorder(),backgroundColor:SColors.primary),
-            child:const Text("Done"),)):
+            child:const Text("Done"),)
+            ,)
+              :
           Positioned(
               right: SSizes.defaultSpace,
               bottom: SDeviceUtlis.getBottomNavigationBarHeight(),
@@ -91,9 +96,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       curve: Curves.easeIn);
                 },
                 style: ElevatedButton.styleFrom(shape: CircleBorder(),backgroundColor: SColors.primary),
-                child:Icon(Iconsax.arrow_right_3),))
+                child:Icon(Iconsax.arrow_right_3),)),
+
         ],
       ),
     );
   }
+}
+
+void Done(context) async{
+  final prefs= await SharedPreferences.getInstance();
+  await prefs.setBool('OnBoardingScreen', false);
+  Navigator.pushReplacement(context,
+      MaterialPageRoute(builder: (context)=>const Mylogin()));
 }

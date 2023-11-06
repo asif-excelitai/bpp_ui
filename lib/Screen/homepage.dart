@@ -114,12 +114,12 @@ class _NewoneState extends State<Newone> {
                           // value: themeProvider.isDarkMode,
                           value: lightvalue,
                           onChanged: (value) async {
-                                if(lightvalue=value!) {
-                                  value =await themeProvider.setThemeMode(ThemeMode.light);
-                                  systemvalue=false;
-                                  darkvalue=false;
-                                  // lightvalue=value!;
-                                }
+                            if(lightvalue=value!) {
+                              value =await themeProvider.setThemeMode(ThemeMode.light);
+                              systemvalue=false;
+                              darkvalue=false;
+                              // lightvalue=value!;
+                            }
                              },
 
                         ),

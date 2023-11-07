@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../features/authentication/theme.controller/theme_provider.dart';
+import '../../temp/temp.dart';
 import '../../utils/constant/sizes.dart';
+import '../../utils/helpers/helper_function.dart';
 
 
 class themelist extends StatelessWidget {
@@ -40,6 +42,7 @@ class themelist extends StatelessWidget {
                             value = await themeProvider.setThemeMode(ThemeMode.system);
                             lightvalue = false;
                             darkvalue=false;
+                            SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
                       ),
@@ -62,6 +65,7 @@ class themelist extends StatelessWidget {
                             value = await themeProvider.setThemeMode(ThemeMode.light);
                             systemvalue = false;
                             darkvalue = false;
+                            SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
 
@@ -86,6 +90,7 @@ class themelist extends StatelessWidget {
                             await themeProvider.setThemeMode(ThemeMode.dark);
                             systemvalue = false;
                             lightvalue = false;
+                            SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
                       ),

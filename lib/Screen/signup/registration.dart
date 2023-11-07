@@ -1,8 +1,8 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecshop/Screen/signup/regestration_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:khoroch/Screen/signup/regestration_image.dart';
 
 import '../../utils/device/device_utility.dart';
 import '../../utils/helpers/helper_function.dart';

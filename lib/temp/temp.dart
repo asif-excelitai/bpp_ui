@@ -1,11 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecshop/Screen/settings/user_darkmode.dart';
-import 'package:ecshop/Screen/widgets/theme_list.dart';
-import 'package:ecshop/features/authentication/theme.controller/theme_provider.dart';
-import 'package:ecshop/utils/constant/sizes.dart';
-import 'package:ecshop/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:khoroch/Screen/settings/user_darkmode.dart';
+import 'package:khoroch/utils/constant/sizes.dart';
+import 'package:khoroch/utils/helpers/helper_function.dart';
 
 import '../Screen/settings/language.dart';
 

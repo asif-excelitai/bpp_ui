@@ -1,5 +1,5 @@
-import 'package:ecshop/Screen/widgets/theme_list.dart';
 import 'package:flutter/material.dart';
+import 'package:khoroch/Screen/widgets/theme_list.dart';
 class ThemeSelect extends StatefulWidget {
   const ThemeSelect({super.key});
 
@@ -14,7 +14,7 @@ class _ThemeSelectState extends State<ThemeSelect> {
       appBar: AppBar(
         // automaticallyImplyLeading: false,
           title:const Text("Change Theme")),
-      body: const themelist(),
+      body: const Themelist(),
 
     );
   }

@@ -1,15 +1,16 @@
-import 'package:ecshop/Screen/login/loginscreen.dart';
-import 'package:ecshop/Screen/onboarding/widgets/onBoarding_page.dart';
-import 'package:ecshop/utils/constant/image_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:khoroch/Screen/login/loginscreen.dart';
+import 'package:khoroch/Screen/onboarding/widgets/onBoarding_page.dart';
+import 'package:khoroch/utils/constant/colors.dart';
+import 'package:khoroch/utils/constant/image_strings.dart';
+import 'package:khoroch/utils/constant/sizes.dart';
+import 'package:khoroch/utils/constant/text_strings.dart';
+import 'package:khoroch/utils/device/device_utility.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../utils/constant/colors.dart';
-import '../../utils/constant/sizes.dart';
-import '../../utils/constant/text_strings.dart';
-import '../../utils/device/device_utility.dart';
+
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});

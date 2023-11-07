@@ -1,10 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecshop/Screen/signup/registration.dart';
-import 'package:ecshop/temp/temp.dart';
-import 'package:ecshop/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:khoroch/Screen/signup/registration.dart';
+import 'package:khoroch/temp/temp.dart';
+import 'package:khoroch/utils/device/device_utility.dart';
 import '../../utils/helpers/helper_function.dart';
-import '../HomePage/homepage.dart';
 import '../widgets/clipPath.dart';
 import '../widgets/divider.dart';
 import '../widgets/headerlogo.dart';
@@ -347,7 +346,7 @@ class _MyloginState extends State<Mylogin> {
                                   child: Text("Sign in".tr().toString(),
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: SDeviceUtlis.getScreenHeight(context) * .018
+                                      fontSize: SDeviceUtlis.getScreenWidth(context) * .025,
                                     ),)),
                               ),
                               Row(

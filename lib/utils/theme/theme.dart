@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'custom_themes/appbar_theme.dart';
 import 'custom_themes/bottom_sheet_theme.dart';
-import 'custom_themes/checkbox_theme.dart';
 import 'custom_themes/chip_theme.dart';
 import 'custom_themes/elevated_button_theme.dart';
 import 'custom_themes/outlined_button_theme.dart';
-import 'custom_themes/text_field_theme.dart';
 import 'custom_themes/text_themes.dart';
 class SAppTheme{
 SAppTheme._();
@@ -19,11 +17,9 @@ static ThemeData lighttheme=ThemeData(
   chipTheme: SChipTheme.lightChipTheme,
   scaffoldBackgroundColor: Colors.white,
   appBarTheme: SAppbarTheme.LightAppbarTheme,
-  checkboxTheme: SCheckboxTheme.darkCheckboxTheme,
   bottomSheetTheme: SBottomSheetTheme.lightBottomSheetTheme,
   elevatedButtonTheme: SElevatedButtonTheme.lightElevatedButtonTheme,
   outlinedButtonTheme: SOutlineButtonTheme.lightOutlinedButtonTheme,
-  // inputDecorationTheme: STextFormFieldTheme.lightInputDecorationTheme,
   colorScheme: ColorScheme.light(),
 
 );
@@ -36,7 +32,7 @@ static ThemeData darktheme=ThemeData(
   chipTheme: SChipTheme.darkChipTheme,
   scaffoldBackgroundColor: Colors.black,
   appBarTheme: SAppbarTheme.DarkAppbarTheme,
-  checkboxTheme: SCheckboxTheme.darkCheckboxTheme,
+  // checkboxTheme: SCheckboxTheme.darkCheckboxTheme,
   bottomSheetTheme: SBottomSheetTheme.darktBottomSheetTheme,
   // inputDecorationTheme: STextFormFieldTheme.darkInputDecorationTheme,
   outlinedButtonTheme: SOutlineButtonTheme.DarkOutlineButtonTheme,

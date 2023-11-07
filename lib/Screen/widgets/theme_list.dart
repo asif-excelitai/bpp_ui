@@ -1,12 +1,12 @@
-
 import 'package:flutter/material.dart';
+import 'package:khoroch/features/authentication/theme.controller/checkbox_provider.dart';
 import 'package:provider/provider.dart';
 import '../../features/authentication/theme.controller/theme_provider.dart';
 import '../../utils/constant/sizes.dart';
 
 
-class themelist extends StatelessWidget {
-  const themelist({
+class Themelist extends StatelessWidget {
+  const Themelist({
     super.key,
   });
 
@@ -18,7 +18,8 @@ class themelist extends StatelessWidget {
     bool lightvalue = false;
     bool systemvalue = false;
     return Scaffold(
-        body: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
+        body:
+        Consumer2<ThemeProvider,CheckBoxProvider>(builder: (context, themeProvider,checkBoxProvider ,child) {
           return ListView(
             padding: const EdgeInsets.only(top: SSizes.defaultSpace),
             children: [
@@ -27,41 +28,37 @@ class themelist extends StatelessWidget {
                   Row(
                     children: [
                       Checkbox(
-                        activeColor: Colors.white,
-                        checkColor: Colors.blue,
                         shape: const RoundedRectangleBorder(
                             borderRadius:
                             BorderRadius.all(Radius.circular(5.0))),
-                        // Rounded Checkbox
-                        // value: themeProvider.isDarkMode,
                         value: systemvalue,
                         onChanged: (value) async {
                           if (systemvalue = value!) {
                             value = await themeProvider.setThemeMode(ThemeMode.system);
                             lightvalue = false;
                             darkvalue=false;
+                            value =await checkBoxProvider.setBoolmode(true);
+                            // SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
                       ),
-                     const Text("System Mode"),
+                      const Text("System Mode"),
                     ],
                   ),
                   Row(
                     children: [
                       Checkbox(
-                        activeColor: Colors.white,
-                        checkColor: Colors.blue,
                         shape: const RoundedRectangleBorder(
                             borderRadius:
                             BorderRadius.all(Radius.circular(5.0))),
-                        // Rounded Checkbox
-                        // value: themeProvider.isDarkMode,
                         value: lightvalue,
                         onChanged: (value) async {
                           if (lightvalue = value!) {
                             value = await themeProvider.setThemeMode(ThemeMode.light);
                             systemvalue = false;
                             darkvalue = false;
+                            value =await checkBoxProvider.setBoolmode(true);
+                            // SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
 
@@ -72,8 +69,6 @@ class themelist extends StatelessWidget {
                   Row(
                     children: [
                       Checkbox(
-                        activeColor: Colors.white,
-                        checkColor: Colors.blue,
                         shape: const RoundedRectangleBorder(
                             borderRadius:
                             BorderRadius.all(Radius.circular(5.0))),
@@ -86,6 +81,8 @@ class themelist extends StatelessWidget {
                             await themeProvider.setThemeMode(ThemeMode.dark);
                             systemvalue = false;
                             lightvalue = false;
+                            value =await checkBoxProvider.setBoolmode(true);
+                            // SHelperFunctions.navigateToScreen(context, Userhomepage());
                           }
                         },
                       ),

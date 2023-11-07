@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:ecshop/temp/temp.dart';
-import 'package:ecshop/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:khoroch/temp/temp.dart';
+import 'package:khoroch/utils/helpers/helper_function.dart';
 
 
 class language extends StatelessWidget {
@@ -11,7 +11,7 @@ class language extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark=SHelperFunctions.isDarkMode(context);
+    // final dark=SHelperFunctions.isDarkMode(context);
     return SafeArea(
       child: Column(
         children: [

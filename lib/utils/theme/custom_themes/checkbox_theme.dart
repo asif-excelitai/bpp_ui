@@ -3,41 +3,38 @@ class SCheckboxTheme{
   SCheckboxTheme._();
 
   ///light
-
 static  CheckboxThemeData lightCheckboxTheme=CheckboxThemeData(
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
   checkColor: MaterialStateProperty.resolveWith((states) {
     if(states.contains(MaterialState.selected)){
-      return Colors.white;
+      return Colors.red;
     } else {
-      return Colors.black ;
+      return Colors.green;
     }
   }),
   fillColor: MaterialStateProperty.resolveWith((states){
     if(states.contains(MaterialState.selected)){
       return Colors.blue;
     } else{
-      return Colors.transparent;
+      return Colors.redAccent;
     }
   })
 );
-
 ///dark
-
 static CheckboxThemeData darkCheckboxTheme=CheckboxThemeData(
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
   checkColor: MaterialStateProperty.resolveWith((states){
     if(states.contains(MaterialState.selected)){
-      return Colors.black;
+      return Colors.white;
     }else {
-      return Colors.indigo;
+      return Colors.black;
     }
   }),
   fillColor: MaterialStateProperty.resolveWith((states){
     if(states.contains(MaterialState.selected)){
      return Colors.blue;
   }else{
-      return Colors.red;
+      return Colors.redAccent;
     }
 })
 );

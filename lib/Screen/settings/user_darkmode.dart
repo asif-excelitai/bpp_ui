@@ -14,7 +14,7 @@ class _ThemeSelectState extends State<ThemeSelect> {
       appBar: AppBar(
         // automaticallyImplyLeading: false,
           title:const Text("Change Theme")),
-      body: const themelist(),
+      body: const Themelist(),
 
     );
   }

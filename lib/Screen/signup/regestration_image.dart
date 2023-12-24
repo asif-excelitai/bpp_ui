@@ -314,7 +314,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                           padding: EdgeInsets.symmetric(horizontal: SDeviceUtlis.getScreenWidth(context)*.020),
                           margin: EdgeInsets.symmetric(horizontal:SDeviceUtlis.getScreenWidth(context)*.02),
                           width: SDeviceUtlis.getScreenWidth(context),
-                          height: _height * .80,
+                          height: _height * .85,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color:dark?Colors.lightBlueAccent : Color(0xFFFFFFFF),
@@ -383,10 +383,8 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       ),
                                     ),
                                     Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      // mainAxisAlignment: MainAxisAlignment.spaceAround,
                                       children: [
                                         Container(
                                             alignment: Alignment.center,
@@ -407,7 +405,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                             // '${_imagebanner!.path.split('/').last}
                                             ),
                                         SizedBox(
-                                          height: _height *.026,
+                                          height: _height *.025,
                                         ),
                                         Align(
                                           alignment: Alignment.centerRight,
@@ -504,7 +502,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                     });
                                               },
                                               style: ElevatedButton.styleFrom(
-                                                  fixedSize: Size(_weidth * (200/360), _height *(20/360)),
+                                                  fixedSize: Size(SDeviceUtlis.getScreenWidth(context) * (200/360), SDeviceUtlis.getScreenHeight(context) *(20/360)),
                                                   side: BorderSide(
                                                       width: 2,
                                                       color: Color(0xffDBDCE1)),
@@ -517,7 +515,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                               "Browse".tr().toString(),
                                               style: TextStyle(
                                                   color: Color(0xff269DD8),
-                                                  fontSize: SDeviceUtlis.getScreenHeight(context) * .018
+                                                  fontSize: SDeviceUtlis.getScreenHeight(context) * .019
                                               ),
                                             ),
                                           ),
@@ -591,7 +589,7 @@ class _ImageregistrationState extends State<Imageregistration> {
                                         : Text(
                                             "Upload banner/Signboard Picture")),
                               ),
-                              SizedBox(height: 2,),
+                              SizedBox(height: SDeviceUtlis.getScreenHeight(context)*.003,),
                               Align(
                                 alignment: Alignment.centerRight,
                                 child: ElevatedButton(
@@ -693,11 +691,11 @@ class _ImageregistrationState extends State<Imageregistration> {
                                     ),),
                               ),
                               SizedBox(
-                                height: 5,
+                                height: SDeviceUtlis.getScreenHeight(context)*.003,
                               ),
                               Container(
-                                height: _height * .05,
-                                width: _weidth * .99,
+                                height:SDeviceUtlis.getScreenHeight(context) * .05,
+                                width: SDeviceUtlis.getScreenWidth(context) * .99,
                                 decoration: BoxDecoration(
                                   border: Border.all(
                                     color: ispasserror
@@ -722,15 +720,15 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                   : Colors.blueAccent,
                                             )),
                                           ),
-                                          width: _weidth * .04,
-                                          height: _height * .05,
+                                          width: SDeviceUtlis.getScreenWidth(context) * .04,
+                                          height:SDeviceUtlis.getScreenHeight(context) * .05,
                                           // color: Color(0xFBB0E0E),
                                           child: Center(
                                             child: Text(
                                               "Password".tr().toString(),
                                               style: TextStyle(
                                                 color: Colors.blueAccent,
-                                                fontSize: 15.0,
+                                               fontSize: SDeviceUtlis.getScreenHeight(context)*.017,
                                               ),
                                             ),
                                           ),
@@ -739,13 +737,9 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       //padding: const EdgeInsets.only(right: 8.0),
                                       flex: 2,
                                       child: Container(
-                                        height: _height * .05,
+                                        height:SDeviceUtlis.getScreenHeight(context) * .05,
                                         child: TextFormField(
                                           onChanged: (value) {
-                                            // setState(() {
-                                            //   ispasserror=false;
-                                            //   passerrorText='';
-                                            // });
                                             _validatePassword(value);
                                           },
                                           // validator: _validatePassword,
@@ -776,8 +770,8 @@ class _ImageregistrationState extends State<Imageregistration> {
                               Padding(
                                 padding: EdgeInsets.symmetric(vertical: 5),
                                 child: Container(
-                                  height: _height * .05,
-                                  width: _weidth * .99,
+                                  height: SDeviceUtlis.getScreenHeight(context) * .05,
+                                  width: SDeviceUtlis.getScreenWidth(context) * .99,
                                   decoration: BoxDecoration(
                                     border: Border.all(
                                       color: isrepasserror
@@ -800,15 +794,15 @@ class _ImageregistrationState extends State<Imageregistration> {
                                                             ? Colors.red
                                                             : Colors.blueAccent,
                                                         width: 3))),
-                                            width: _weidth * .04,
-                                            height: _height * .05,
+                                            width: SDeviceUtlis.getScreenWidth(context) * .04,
+                                            height: SDeviceUtlis.getScreenHeight(context) * .05,
                                             // color: Color(0xFBB0E0E),
                                             child: Center(
                                               child: Text(
                                                 "Retype Password".tr().toString(),
                                                 style: TextStyle(
                                                   color: Colors.blueAccent,
-                                                  fontSize: 15.0,
+                                                  fontSize: SDeviceUtlis.getScreenHeight(context)*.017,
                                                 ),
                                               ),
                                             ),
@@ -851,14 +845,13 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       style: TextStyle(color: Colors.redAccent),
                                     )
                                   : SizedBox.shrink(),
-                              SizedBox(
-                                height: 5,
-                              ),
+                              // SizedBox(
+                              //   height:SDeviceUtlis.getScreenHeight(context)*.00003,
+                              // ),
                               Row(
                                 // mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Checkbox(
-                                    checkColor: Colors.white,
                                     value: ischeckd,
                                     onChanged: (bool? value) {
                                       setState(() {
@@ -884,10 +877,11 @@ class _ImageregistrationState extends State<Imageregistration> {
                                 ],
                               ),
                               SizedBox(
-                                height: 7.5,
+                                height: SDeviceUtlis.getScreenHeight(context)*.0003,
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                // crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   ElevatedButton(
                                       onPressed: () {
@@ -899,13 +893,16 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       },
                                       style: ElevatedButton.styleFrom(
                                           padding: EdgeInsets.symmetric(
-                                              vertical: 17.0, horizontal: 50.0),
+                                              vertical: SDeviceUtlis.getScreenWidth(context)*.015, horizontal: SDeviceUtlis.getScreenHeight(context)*.070),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(10.0),
                                           ),
                                           primary: Colors.white12),
-                                      child: Text("Back".tr().toString())),
+                                      child: Text("Back".tr().toString(),style: TextStyle(
+                                          color: const Color(0xff269DD8),
+                                          fontSize: SDeviceUtlis.getScreenHeight(context) * .019
+                                      ))),
                                   ElevatedButton(
                                       onPressed: () {
                                         if (_passwordController.text.isNotEmpty &&
@@ -940,13 +937,16 @@ class _ImageregistrationState extends State<Imageregistration> {
                                       },
                                       style: ElevatedButton.styleFrom(
                                           padding: EdgeInsets.symmetric(
-                                              vertical: 17.0, horizontal: 50.0),
+                                              vertical: SDeviceUtlis.getScreenWidth(context)*.015, horizontal: SDeviceUtlis.getScreenHeight(context)*.070),
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(10.0),
                                           ),
                                           primary: Colors.white12),
-                                      child: Text("Submit".tr().toString())),
+                                      child: Text("Submit".tr().toString(),style: TextStyle(
+                                          color: Color(0xff269DD8),
+                                          fontSize: SDeviceUtlis.getScreenHeight(context) * .019
+                                      ))),
                                 ],
                               ),
                               Row(

@@ -29,21 +29,21 @@ class ThemeProvider extends ChangeNotifier{
     }
     notifyListeners();
   }
-  bool get isDarkMode {
-    if(themeMode ==ThemeMode.dark){
-      return true;
-    }else if(themeMode ==ThemeMode.system){
-      var brightness = SchedulerBinding.instance.platformDispatcher.platformBrightness;
-      if(brightness == Brightness.dark){
-        return true;
-      }else{
-        return false;
-      }
-    }
-    else{
-      return false;
-    }
-  }
+  // bool get isDarkMode {
+  //   if(themeMode ==ThemeMode.dark){
+  //     return true;
+  //   }else if(themeMode ==ThemeMode.system){
+  //     var brightness = SchedulerBinding.instance.platformDispatcher.platformBrightness;
+  //     if(brightness == Brightness.dark){
+  //       return true;
+  //     }else{
+  //       return false;
+  //     }
+  //   }
+  //   else{
+  //     return false;
+  //   }
+  // }
   //   setThemeMode(bool isOn) async {
   //   final prefs= await SharedPreferences.getInstance();
   //   if (isOn) {

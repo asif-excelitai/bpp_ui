@@ -347,7 +347,7 @@ class _MyloginState extends State<Mylogin> {
                                   child: Text("Sign in".tr().toString(),
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: SDeviceUtlis.getScreenHeight(context) * .018
+                                      fontSize: SDeviceUtlis.getScreenWidth(context) * .025,
                                     ),)),
                               ),
                               Row(
